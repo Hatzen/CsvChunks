@@ -1,0 +1,26 @@
+?CSV File Chunker - Splits large CSV files into smaller chunks
+
+Usage: java Main [options]
+
+
+Options:
+M  -i, --input <dir>       Input directory containing CSV files (default: .)
+D  -o, --output <dir>      Output directory for chunks (default: .)
+A  -s, --size <MB>         Maximum chunk size in MB (default: 9)
+F  -h, --header <bool>     Write header to each chunk (default: true)
+S  -p, --pattern <pat>     File name pattern (default: {name}-chunk-{counter}.csv)
+;                          Placeholders: {name}, {counter}
+2  -?, --help              Show this help message
+
+Examples:
+(  java Main -i ./data -o ./chunks -s 5
+2  java Main --pattern "data-{counter}.csv" -s 10
+Starting file chunking...
+
+Input: .
+Output: .
+Max file size: 9 MB
+Write header: true
+*File pattern: {name}-chunk-{counter}.csv
+
+Done!

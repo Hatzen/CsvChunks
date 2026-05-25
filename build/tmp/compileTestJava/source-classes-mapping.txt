@@ -1,0 +1,2 @@
+de/hartz/software/csvchunks/ParserTest.java
+ de.hartz.software.csvchunks.ParserTest
